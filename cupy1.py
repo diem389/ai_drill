@@ -16,6 +16,6 @@ kernel = cp.ElementwiseKernel(
        z = x + y;
     } 
     ''', 'kernel1')
-# %%
+# %% print result
 r = kernel(x, y)
 print(cp.asnumpy(r))
